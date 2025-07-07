@@ -20,7 +20,8 @@ st.subheader('Summarize URL')
 #     groq_api_key = st.text_input("Groq API Key", value="", type="password")
 
 # groq_api_key = os.getenv("GROQ_API_KEY")
-st.secrets["GROQ_API_KEY"]
+
+groq_api_key = st.secrets["GROQ_API_KEY"]
 
 generic_url=st.text_input("URL",label_visibility="collapsed")
 
